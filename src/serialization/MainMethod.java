@@ -4,10 +4,10 @@ import java.io.*;
 
 public class MainMethod {
     public static void main(String[]args) throws IOException, ClassNotFoundException {
-        Course course= new Course("matematik");
-        Student student= new Student("Yasemin","uslu",course);
-        //writeFile(student,"C:\\Users\\ekiny\\OneDrive\\Masaüstü\\Obss-staj\\day3example\\src\\serialization\\newfile.txt");
-       readFile("C:\\Users\\ekiny\\OneDrive\\Masaüstü\\Obss-staj\\day3example\\src\\serialization\\newfile.txt");
+        Course course= new Course("Data Struct");
+        Student student= new Student("Yasemin","Uslu",course);
+        //writeFile(student,"C:\\Users");
+       readFile("C:\\Users");
 
     }
     public static void writeFile(Student student, String filePath) throws IOException {

@@ -6,7 +6,7 @@ public class Executer {
         try {
             divider.divide();
         }catch (ArithmeticException e){
-            System.out.println("Bu işlem yapılamaz: " +e);
+            System.out.println("This operation cannot be done: " +e);
             throw new MyUncheckedException("unchecked exception");
         }catch (MyCheckedException e){
             System.out.println("Checked Exception "+e);

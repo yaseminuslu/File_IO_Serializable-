@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 public class FileDataStore implements DataStore {
     Map<String,String> fileDatas= new HashMap<>();
     private ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
-    private String filePath ="C:\\Users\\ekiny\\OneDrive\\Masaüstü\\Obss-staj\\day3example\\src\\simpleDatabase\\newFile.txt";
+    private String filePath ="C:\\Users";
     private void writeFile(Map<String,String> data, String filePath) throws IOException {
         try(FileOutputStream fileOutputStream = new FileOutputStream(filePath);
             ObjectOutputStream objectOutputStream=new ObjectOutputStream(fileOutputStream)){
